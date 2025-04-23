@@ -22,17 +22,26 @@ python biblioteca.
 Requisitos Funcionais
 
 RF01	Cadastrar novos livros (título, autor, ISBN)
+
 RF02	Buscar livros por título, autor ou ISBN
+
 RF03	Listar todos os livros ou apenas disponíveis
+
 RF04	Emprestar livros (marcar como indisponível)
+
 RF05	Devolver livros (marcar como disponível)
+
 RF06	Salvar e carregar dados em arquivo JSON
+
 
 Requisitos Não Funcionais
 
 Desenvolvido em Python com POO (2 classes, 6+ métodos)
+
 Interface via terminal com menu interativo
+
 Armazenamento persistente em JSON
+
 
 🧪 Testes
 
