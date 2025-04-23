@@ -1,5 +1,7 @@
 import pytest
-from biblioteca import Livro, Biblioteca  # Substitua "biblioteca" pelo nome do seu arquivo
+from biblioteca import Livro, Biblioteca 
+
+#para rodar o teste, digite "pytest test_biblioteca.py -v" no terminal !!!
 
 # Fixture para criar uma biblioteca de teste com dados iniciais
 @pytest.fixture
@@ -9,7 +11,7 @@ def biblioteca_teste():
     bib.adicionar_livro(Livro("1984", "George Orwell", "456"))
     return bib
 
-# --- Testes para a classe Livro ---
+# Testes para a classe Livro
 def test_livro_emprestar():
     livro = Livro("Python Guide", "Autor X", "789")
     assert livro.disponivel == True  # Livro começa disponível
@@ -20,7 +22,7 @@ def test_livro_emprestar_indisponivel():
     livro = Livro("Python Guide", "Autor X", "789", disponivel=False)
     assert livro.emprestar() == False  # Falha ao emprestar (já emprestado)
 
-# --- Testes para a classe Biblioteca ---
+# Testes para a classe Biblioteca
 def test_buscar_livro_existente(biblioteca_teste):
     resultados = biblioteca_teste.buscar_livro("Dom")
     assert len(resultados) == 1
