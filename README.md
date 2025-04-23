@@ -1,6 +1,7 @@
 Sistema de Gerenciamento de Biblioteca em Python
 
 📚 Visão Geral
+
 Este sistema permite gerenciar o acervo de uma biblioteca com operações como cadastro, busca, empréstimo e devolução de livros, além de persistência dos dados em arquivo JSON.
 
 🛠️ Requisitos
